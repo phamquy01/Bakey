@@ -15,64 +15,6 @@
 
 @section('content')
     <div class="main">
-        <!--mini cart-->
-        <div class="mini_cart">
-            <div class="cart_gallery">
-                <div class="cart_close">
-                    <div class="cart_text">
-                        <h3>cart</h3>
-                    </div>
-                    <div class="mini_cart_close">
-                        <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
-                    </div>
-                </div>
-                <div class="cart_item">
-                    <div class="cart_img">
-                        <a href="single-product.html"><img src="/images/product/product1.png" alt=""></a>
-                    </div>
-                    <div class="cart_info">
-                        <a href="single-product.html">Primis In Faucibus</a>
-                        <p>1 x <span> $65.00 </span></p>
-                    </div>
-                    <div class="cart_remove">
-                        <a href="#"><i class="ion-android-close"></i></a>
-                    </div>
-                </div>
-                <div class="cart_item">
-                    <div class="cart_img">
-                        <a href="single-product.html"><img src="/images/product/product2.png" alt=""></a>
-                    </div>
-                    <div class="cart_info">
-                        <a href="single-product.html">Letraset Sheets</a>
-                        <p>1 x <span> $60.00 </span></p>
-                    </div>
-                    <div class="cart_remove">
-                        <a href="#"><i class="ion-android-close"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="mini_cart_table">
-                <div class="cart_table_border">
-                    <div class="cart_total">
-                        <span>Sub total:</span>
-                        <span class="price">$125.00</span>
-                    </div>
-                    <div class="cart_total mt-10">
-                        <span>total:</span>
-                        <span class="price">$125.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="mini_cart_footer">
-                <div class="cart_button">
-                    <a href="cart.html">View cart</a>
-                </div>
-                <div class="cart_button">
-                    <a href="checkout.html"><i class="fa fa-sign-in"></i> Checkout</a>
-                </div>
-            </div>
-        </div>
-        <!--mini cart end-->
 
         <!-- page search box -->
         <div class="page_search_box">
@@ -86,8 +28,8 @@
         </div>
 
         <!--slide banner section start-->
-        <div class="hero_banner_section hero_banner2 d-flex align-items-center mb-60"
-            data-bgimg="/images/bg/hero-bg2.png">
+        <div class="hero_banner_section hero_banner2 d-flex align-items-center mb-60" data-bgimg="/images/bg/hero-bg2.png"
+            style="background-image: url(images/bg/hero-bg2.png)">
             <div class="container">
                 <div class="hero_banner_inner">
                     <div class="row align-items-center">
@@ -162,7 +104,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="single_featured_banner wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">
+                        <div class="single_featured_banner wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                             <div class="featured_banner_thumb">
                                 <a href="shop-left-sidebar.html"><img src="/images/bg/featured-banner1.png"
                                         alt=""></a>
@@ -185,23 +127,6 @@
                     <div class="section_title text-center">
                         <h2>New Products</h2>
                     </div>
-                    <div class="product_tab_button">
-                        <ul class="nav justify-content-center" role="tablist" id="nav-tab">
-                            <li>
-                                <a class="active" data-toggle="tab" href="#features" role="tab"
-                                    aria-controls="features" aria-selected="false">Our Features </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#seller" role="tab" aria-controls="seller"
-                                    aria-selected="false">
-                                    Best Sellers </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#sales" role="tab" aria-controls="sales"
-                                    aria-selected="false">New Items </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
                 <div class="tab-content product_container">
                     <div class="tab-pane fade show active" id="features" role="tabpanel">
@@ -215,7 +140,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -244,7 +169,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -273,7 +198,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -302,7 +227,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -332,7 +257,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -361,7 +286,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -390,7 +315,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -419,7 +344,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -454,7 +379,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -483,7 +408,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -512,7 +437,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -541,7 +466,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -570,7 +495,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -599,7 +524,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -628,7 +553,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -657,7 +582,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -693,7 +618,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -722,7 +647,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -752,7 +677,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -781,7 +706,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -810,7 +735,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -840,7 +765,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -869,7 +794,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -898,7 +823,7 @@
                                                         alt=""></a>
                                                 <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
-                                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart">
+                                                        <li class="add_to_cart"><a href="cart" title="Add to cart">
                                                                 <span class="pe-7s-shopbag"></span></a></li>
                                                         <li class="wishlist"><a href="wishlist.html"
                                                                 title="Add to Wishlist"><span
@@ -1060,7 +985,7 @@
                                             alt=""></a>
                                     <div class="action_links">
                                         <ul class="d-flex justify-content-center">
-                                            <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
+                                            <li class="add_to_cart"><a href="cart" title="Add to cart"> <span
                                                         class="pe-7s-shopbag"></span></a></li>
                                             <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
                                                         class="pe-7s-like"></span></a></li>
@@ -1087,7 +1012,7 @@
                                             alt=""></a>
                                     <div class="action_links">
                                         <ul class="d-flex justify-content-center">
-                                            <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
+                                            <li class="add_to_cart"><a href="cart" title="Add to cart"> <span
                                                         class="pe-7s-shopbag"></span></a></li>
                                             <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
                                                         class="pe-7s-like"></span></a></li>
@@ -1110,11 +1035,11 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a href="single-product.html" ><img src="/images/product/product3.png"
+                                    <a href="single-product.html"><img src="/images/product/product3.png"
                                             alt=""></a>
                                     <div class="action_links">
                                         <ul class="d-flex justify-content-center">
-                                            <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
+                                            <li class="add_to_cart"><a href="cart" title="Add to cart"> <span
                                                         class="pe-7s-shopbag"></span></a></li>
                                             <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
                                                         class="pe-7s-like"></span></a></li>
@@ -1141,7 +1066,7 @@
                                             alt=""></a>
                                     <div class="action_links">
                                         <ul class="d-flex justify-content-center">
-                                            <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
+                                            <li class="add_to_cart"><a href="cart" title="Add to cart"> <span
                                                         class="pe-7s-shopbag"></span></a></li>
                                             <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
                                                         class="pe-7s-like"></span></a></li>
@@ -1168,7 +1093,7 @@
                                             alt=""></a>
                                     <div class="action_links">
                                         <ul class="d-flex justify-content-center">
-                                            <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
+                                            <li class="add_to_cart"><a href="cart" title="Add to cart"> <span
                                                         class="pe-7s-shopbag"></span></a></li>
                                             <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
                                                         class="pe-7s-like"></span></a></li>
@@ -1195,7 +1120,7 @@
                                             alt=""></a>
                                     <div class="action_links">
                                         <ul class="d-flex justify-content-center">
-                                            <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
+                                            <li class="add_to_cart"><a href="cart" title="Add to cart"> <span
                                                         class="pe-7s-shopbag"></span></a></li>
                                             <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
                                                         class="pe-7s-like"></span></a></li>
@@ -1222,7 +1147,7 @@
                                             alt=""></a>
                                     <div class="action_links">
                                         <ul class="d-flex justify-content-center">
-                                            <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
+                                            <li class="add_to_cart"><a href="cart" title="Add to cart"> <span
                                                         class="pe-7s-shopbag"></span></a></li>
                                             <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
                                                         class="pe-7s-like"></span></a></li>
@@ -1249,7 +1174,7 @@
                                             alt=""></a>
                                     <div class="action_links">
                                         <ul class="d-flex justify-content-center">
-                                            <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
+                                            <li class="add_to_cart"><a href="cart" title="Add to cart"> <span
                                                         class="pe-7s-shopbag"></span></a></li>
                                             <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
                                                         class="pe-7s-like"></span></a></li>
@@ -1409,39 +1334,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="single_blog wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
-                            <div class="blog_thumb">
-                                <a href="blog-detail-left-sidebar.html"><img src="/images/blog/blog1.png"
-                                        alt=""></a>
-                            </div>
-                            <div class="blog_content">
-                                <div class="blog_arrow_btn">
-                                    <a href="blog-detail-left-sidebar.html"><i class="ion-arrow-right-c"></i></a>
-                                </div>
-                                <span>Brakery</span>
-                                <h3><a href="blog-detail-left-sidebar.html">There are many of Lorem
-                                        Ipsum.</a></h3>
-                                <div class="blog__meta d-flex align-items-center">
-                                    <div class="blog__meta__thumb">
-                                        <img src="/images/others/meta-img1.png" alt="">
-                                    </div>
-                                    <div class="blog__meta__text">
-                                        <ul class="d-flex">
-                                            <li>By: Admin</li>
-                                            <li><i class="icofont-calendar"></i> 22 Aug, 2021</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
         <!-- blog section end -->
-
-
         <!-- modal area start-->
         <div class="modal fade" id="modal_box" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1469,8 +1365,8 @@
                                             </div>
                                             <div class="tab-pane fade" id="tab3" role="tabpanel">
                                                 <div class="modal_tab_img">
-                                                    <a href="#" class="ratio ratio-1x1"><img src="/images/product/product3.png"
-                                                            alt=""></a>
+                                                    <a href="#" class="ratio ratio-1x1"><img
+                                                            src="/images/product/product3.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="tab4" role="tabpanel">

@@ -7,145 +7,17 @@
                         <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
                     </div>
                     <div class="welcome_text text-center">
-                        <p>Welcome to Bucker Bakery Shop</p>
+                        <p>Welcome to Bakery Shop</p>
                     </div>
                     <div id="menu" class="text-left ">
                         <ul class="offcanvas_main_menu">
                             <li class="menu-item-has-children active">
                                 <a href="#">Home</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html">Home 01</a></li>
-                                    <li><a href="index-2.html">Home 02</a></li>
-                                </ul>
                             </li>
                             <li><a href="about.html">About Us</a></li>
-                            <li class="menu-item-has-children"><a href="#">Pages</a>
-                                <ul class="sub-menu">
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="404.html">Error 404</a></li>
-                                </ul>
-                            </li>
                             <li class="menu-item-has-children"><a href="#">Shop</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item-has-children"><a href="#">Shop Layout</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="shop-fullwidth.html">Shop Fullwidth</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-left-sidebar.html">Shop Left Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-right-sidebar.html">Shop Right Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-list-fullwidth.html">Shop List Fullwidth</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-list-right-sidebar.html">Shop List Right
-                                                    Sidebar</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">Product Style</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="single-product.html">Single Product Default</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-product-group.html">Single Product Group</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-product-variable.html">Single Product
-                                                    Variable</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-product-sale.html">Single Product Sale</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-product-sticky.html">Single Product Sticky</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-product-affiliate.html">Single Product
-                                                    Affiliate</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">Popular Products</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="shop-left-sidebar.html">Classic Carrot Cake</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-left-sidebar.html">Gingerbread Cake</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-left-sidebar.html">Yellow Cupcakes</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-left-sidebar.html">Hawaiian Cake Roll</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-left-sidebar.html">Banana Snack Cake</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-left-sidebar.html">Chocolate Cake</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">Product Related</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="my-account.html">My Account</a>
-                                            </li>
-                                            <li>
-                                                <a href="login-register.html">Login | Register</a>
-                                            </li>
-                                            <li>
-                                                <a href="cart.html">Shopping Cart</a>
-                                            </li>
-                                            <li>
-                                                <a href="wishlist.html">Wishlist</a>
-                                            </li>
-                                            <li>
-                                                <a href="compare.html">Compare</a>
-                                            </li>
-                                            <li>
-                                                <a href="checkout.html">Checkout</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             </li>
                             <li class="menu-item-has-children"><a href="blog-fullwidth.html">blog</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item-has-children"><a href="#">Blog Holder</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                            <li><a href="blog-fullwidth.html">Blog Fullwidth</a></li>
-                                            <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a>
-                                            </li>
-                                            <li><a href="blog-list-right-sidebar.html">Blog List Right
-                                                    Sidebar</a>
-                                            </li>
-                                            <li><a href="blog-list-fullwidth.html">Blog List Fullwidth</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">Blog Details Holder</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-detail-fullwidth.html">Blog Detail Fullwidth</a>
-                                            </li>
-                                            <li><a href="blog-detail-left-sidebar.html">Blog Detail Left
-                                                    Sidebar</a></li>
-                                            <li><a href="blog-detail-right-sidebar.html">Blog Detail Right
-                                                    Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             </li>
                             <li class="menu-item-has-children"><a href="contact.html">Contact Us</a></li>
                         </ul>
@@ -193,152 +65,21 @@
             <div class="col-12">
                 <div class="main_header d-flex justify-content-between align-items-center">
                     <div class="header_logo">
-                        <a class="sticky_none" href="index.html"><img src="/images/logo/logo.png"
-                                alt=""></a>
+                        <a class="sticky_none" href="/"><img src="/images/logo/logo.png" alt=""></a>
                     </div>
                     <!--main menu start-->
                     <div class="main_menu d-none d-lg-block">
                         <nav>
                             <ul class="d-flex">
-                                <li><a class="active" href="index.html">Home</a>
-                                    <ul class="bucker-dropdown">
-                                        <li><a href="index.html">Home 01</a></li>
-                                        <li><a href="index-2.html">Home 02</a></li>
-                                    </ul>
+                                <li><a class="active" href="/">Home</a>
                                 </li>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="#">Pages</a>
-                                    <ul class="bucker-dropdown">
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="404.html">Error 404</a></li>
-                                    </ul>
                                 </li>
                                 <li class="megamenu-holder">
                                     <a href="shop-left-sidebar.html">Shop</a>
-                                    <ul class="megamenu grid-container">
-                                        <li class="grid-item">
-                                            <span class="title">Shop Layout</span>
-                                            <ul>
-                                                <li>
-                                                    <a href="shop-fullwidth.html">Shop Fullwidth</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-left-sidebar.html">Shop Left Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-right-sidebar.html">Shop Right Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-list-fullwidth.html">Shop List Fullwidth</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-list-right-sidebar.html">Shop List Right
-                                                        Sidebar</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="grid-item">
-                                            <span class="title">Product Style</span>
-                                            <ul>
-                                                <li>
-                                                    <a href="single-product.html">Single Product Default</a>
-                                                </li>
-                                                <li>
-                                                    <a href="single-product-group.html">Single Product Group</a>
-                                                </li>
-                                                <li>
-                                                    <a href="single-product-variable.html">Single Product
-                                                        Variable</a>
-                                                </li>
-                                                <li>
-                                                    <a href="single-product-sale.html">Single Product Sale</a>
-                                                </li>
-                                                <li>
-                                                    <a href="single-product-sticky.html">Single Product Sticky</a>
-                                                </li>
-                                                <li>
-                                                    <a href="single-product-affiliate.html">Single Product
-                                                        Affiliate</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="grid-item">
-                                            <span class="title">Popular Products</span>
-                                            <ul>
-                                                <li>
-                                                    <a href="shop-left-sidebar.html">Classic Carrot Cake</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-left-sidebar.html">Gingerbread Cake</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-left-sidebar.html">Yellow Cupcakes</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-left-sidebar.html">Hawaiian Cake Roll</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-left-sidebar.html">Banana Snack Cake</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-left-sidebar.html">Chocolate Cake</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="grid-item">
-                                            <span class="title">Product Related</span>
-                                            <ul>
-                                                <li>
-                                                    <a href="my-account.html">My Account</a>
-                                                </li>
-                                                <li>
-                                                    <a href="login-register.html">Login | Register</a>
-                                                </li>
-                                                <li>
-                                                    <a href="cart.html">Shopping Cart</a>
-                                                </li>
-                                                <li>
-                                                    <a href="wishlist.html">Wishlist</a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html">Compare</a>
-                                                </li>
-                                                <li>
-                                                    <a href="checkout.html">Checkout</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li><a href="blog-left-sidebar.html">blog</a>
-                                    <ul class="bucker-dropdown">
-                                        <li class="submenu-holder"><a href="#">Blog Holder</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                <li><a href="blog-fullwidth.html">Blog Fullwidth</a></li>
-                                                <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a>
-                                                </li>
-                                                <li><a href="blog-list-right-sidebar.html">Blog List Right
-                                                        Sidebar</a>
-                                                </li>
-                                                <li><a href="blog-list-fullwidth.html">Blog List Fullwidth</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu-holder"><a href="#">Blog Details Holder</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog-detail-fullwidth.html">Blog Detail Fullwidth</a>
-                                                </li>
-                                                <li><a href="blog-detail-left-sidebar.html">Blog Detail Left
-                                                        Sidebar</a></li>
-                                                <li><a href="blog-detail-right-sidebar.html">Blog Detail Right
-                                                        Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
@@ -363,3 +104,63 @@
         </div>
     </div>
 </header>
+<!--header area end-->
+
+<!--mini cart-->
+<div class="mini_cart">
+    <div class="cart_gallery">
+        <div class="cart_close">
+            <div class="cart_text">
+                <h3>cart</h3>
+            </div>
+            <div class="mini_cart_close">
+                <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
+            </div>
+        </div>
+        <div class="cart_item">
+            <div class="cart_img">
+                <a href="single-product.html"><img src="/images/product/product1.png" alt=""></a>
+            </div>
+            <div class="cart_info">
+                <a href="single-product.html">Primis In Faucibus</a>
+                <p>1 x <span> $65.00 </span></p>
+            </div>
+            <div class="cart_remove">
+                <a href="#"><i class="ion-android-close"></i></a>
+            </div>
+        </div>
+        <div class="cart_item">
+            <div class="cart_img">
+                <a href="single-product.html"><img src="/images/product/product2.png" alt=""></a>
+            </div>
+            <div class="cart_info">
+                <a href="single-product.html">Letraset Sheets</a>
+                <p>1 x <span> $60.00 </span></p>
+            </div>
+            <div class="cart_remove">
+                <a href="#"><i class="ion-android-close"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="mini_cart_table">
+        <div class="cart_table_border">
+            <div class="cart_total">
+                <span>Sub total:</span>
+                <span class="price">$125.00</span>
+            </div>
+            <div class="cart_total mt-10">
+                <span>total:</span>
+                <span class="price">$125.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="mini_cart_footer">
+        <div class="cart_button">
+            <a href="cart">View cart</a>
+        </div>
+        <div class="cart_button">
+            <a href="checkout.html"><i class="fa fa-sign-in"></i> Checkout</a>
+        </div>
+    </div>
+</div>
+<!--mini cart end-->

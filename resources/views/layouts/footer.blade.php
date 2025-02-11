@@ -10,7 +10,7 @@
                         </div>
                         <div class="shipping_text">
                             <h3>Free Shipping</h3>
-                            <p>Capped at $39 per order</p>
+                            <p>Capped at $30 per order</p>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                         </div>
                         <div class="shipping_text">
                             <h3>Easy Returns</h3>
-                            <p>Shop Wwith Confidence</p>
+                            <p>Shop With Confidence</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                             <h3>Contact Us</h3>
                             <div class="footer_contact_desc">
                                 <p>If you have any question.please
-                                    contact us at <a href="#">demo@example.com</a></p>
+                                    contact us at <a href="#">quypham07102001@gmail.com</a></p>
                             </div>
                             <div class="footer_contact_info">
                                 <div class="footer_contact_info_list d-flex align-items-center">
@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="footer_contact_info_text">
                                         <p>Your address goes here.
-                                            123, Address.</p>
+                                            Ha Noi, Address.</p>
                                     </div>
                                 </div>
                                 <div class="footer_contact_info_list d-flex align-items-center">
@@ -139,8 +139,8 @@
         </div>
         <div class="footer_bottom">
             <div class="copyright_right text-center">
-                <p> © 2021 <a href="index.html"> Bucker.</a> Made with <i class="ion-heart"></i> by
-                    <a href="https://themeforest.net/user/codecarnival/portfolio">CodeCarnival</a>
+                <p> © 2025 <a href="index.html"> Bakery.</a> Made with <i class="ion-heart"></i> by
+                    <a href="https://github.com/phamquy01/Bakey">Quy Pham</a>
                 </p>
             </div>
         </div>

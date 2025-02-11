@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="{{ mix('/css/header.css') }}" />
     <link rel="stylesheet" href="{{ mix('/css/footer.css') }}" />
     <link rel="stylesheet" href="{{ mix('/css/common.css') }}" />
-    <link rel="stylesheet" href="{{ mix('/css/' . View::getSection('file') . '.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ mix('/css/' . View::getSection('file') . '.css') }}" /> --}}
     <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
 </head>
 
