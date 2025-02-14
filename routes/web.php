@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Admin\AdminCategoryProductController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\AdminUserController;
@@ -9,10 +11,14 @@ use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\AdminSliderController;
 use App\Http\Controllers\Admin\AdminFeedbackController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\ProductCollectionController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailController;
 use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
@@ -31,16 +37,22 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 */
 
 Auth::routes();
-
-Route::get('/', HomeController::class); //trang chu
-// cart route
+Route::get('/', HomeController::class);
 Route::get('/cart', CartController::class);
+Route::get('/about', AboutController::class);
+Route::get('/products', ProductController::class);
+Route::get('/blog', BlogController::class);
+Route::get('/contact', ContactController::class);
+Route::get('/account', AccountController::class);
+Route::get('/login', LoginController::class);
 
-Route::get('/category/{slug?}', ProductCategoryController::class)->name('category-detail'); //chi tiet danh muc sp
-Route::get('/products', ProductCollectionController::class);
+
+Route::get('/category/{slug?}', ProductCategoryController::class)->name('category-detail');
+// Route::get('/products', ProductCollectionController::class);
 
 Route::get('/search', SearchController::class);
 Route::get('/product/{slug?}', ProductDetailController::class)->name('product-detail');
+
 //Nhóm route xử lý trên addmin
 Route::middleware('auth')->group(function () {
     Route::group(['prefix' => 'admin', 'as' => 'admin'], function () {

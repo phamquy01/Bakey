@@ -12,14 +12,14 @@
                     <div id="menu" class="text-left ">
                         <ul class="offcanvas_main_menu">
                             <li class="menu-item-has-children active">
-                                <a href="#">Home</a>
+                                <a href="/">Home</a>
                             </li>
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="/about">About Us</a></li>
                             <li class="menu-item-has-children"><a href="#">Shop</a>
                             </li>
-                            <li class="menu-item-has-children"><a href="blog-fullwidth.html">blog</a>
+                            <li class="menu-item-has-children"><a href="/blog">blog</a>
                             </li>
-                            <li class="menu-item-has-children"><a href="contact.html">Contact Us</a></li>
+                            <li class="menu-item-has-children"><a href="/contact">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,9 +48,9 @@
                                 <li class="account_link"> <i class="icofont-user-alt-7"></i><a
                                         href="#">Account</a>
                                     <ul class="dropdown_account_link">
-                                        <li><a href="my-account.html">My Account</a></li>
-                                        <li><a href="login-register.html">Login</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="/account">My Account</a></li>
+                                        <li><a href="/login">Login</a></li>
+                                        <li><a href="/contact">Contact</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -73,15 +73,14 @@
                             <ul class="d-flex">
                                 <li><a class="active" href="/">Home</a>
                                 </li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="#">Pages</a>
-                                </li>
+                                <li><a href="/about">About</a></li>
+                                {{-- <li><a href="/page">Pages</a></li> --}}
                                 <li class="megamenu-holder">
-                                    <a href="shop-left-sidebar.html">Shop</a>
+                                    <a href="/products">Shop</a>
                                 </li>
-                                <li><a href="blog-left-sidebar.html">blog</a>
+                                <li><a href="/blog">blog</a>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="/contact">Contact</a></li>
                             </ul>
                         </nav>
                     </div>

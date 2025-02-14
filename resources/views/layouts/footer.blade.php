@@ -79,13 +79,13 @@
                                 <h3>Information</h3>
                                 <div class="footer_menu">
                                     <ul>
-                                        <li><a href="about.html"> About us</a></li>
-                                        <li><a href="contact.html">Delivery information</a></li>
-                                        <li><a href="contact.html">Privacy Policy</a></li>
-                                        <li><a href="contact.html">Sales</a></li>
-                                        <li><a href="contact.html">Terms & Conditions</a></li>
-                                        <li><a href="contact.html">Shipping Policy</a></li>
-                                        <li><a href="contact.html">EMI Payment</a></li>
+                                        <li><a href="/about"> About us</a></li>
+                                        <li><a href="/contact">Delivery information</a></li>
+                                        <li><a href="/contact">Privacy Policy</a></li>
+                                        <li><a href="/contact">Sales</a></li>
+                                        <li><a href="/contact">Terms & Conditions</a></li>
+                                        <li><a href="/contact">Shipping Policy</a></li>
+                                        <li><a href="/contact">EMI Payment</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -93,12 +93,12 @@
                                 <h3>Account</h3>
                                 <div class="footer_menu">
                                     <ul>
-                                        <li><a href="my-account.html"> My account</a></li>
-                                        <li><a href="contact.html">My orders</a></li>
-                                        <li><a href="contact.html">Returns</a></li>
-                                        <li><a href="contact.html">Shipping</a></li>
+                                        <li><a href="/account"> My account</a></li>
+                                        <li><a href="/contact">My orders</a></li>
+                                        <li><a href="/contact">Returns</a></li>
+                                        <li><a href="/contact">Shipping</a></li>
                                         <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="about.html">How Does It Work</a></li>
+                                        <li><a href="/about">How Does It Work</a></li>
                                         <li><a href="login-register.html">Merchant Sign Up</a></li>
                                     </ul>
                                 </div>
