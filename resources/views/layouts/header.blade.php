@@ -1,3 +1,14 @@
+<!-- page search box -->
+<div class="page_search_box">
+    <div class="search_close">
+        <i class="ion-close-round"></i>
+    </div>
+    <form class="border-bottom" action="#">
+        <input class="border-0" placeholder="Search products..." type="text">
+        <button type="submit"><span class="pe-7s-search"></span></button>
+    </form>
+</div>
+
 <div class="offcanvas_menu">
     <div class="container">
         <div class="row">
@@ -118,7 +129,7 @@
         </div>
         <div class="cart_item">
             <div class="cart_img">
-                <a href="single-product.html"><img src="/images/product/product1.png" alt=""></a>
+                <a href="single-product.html"><img src="/uploads/products/product1.jpeg" alt=""></a>
             </div>
             <div class="cart_info">
                 <a href="single-product.html">Primis In Faucibus</a>
@@ -130,7 +141,7 @@
         </div>
         <div class="cart_item">
             <div class="cart_img">
-                <a href="single-product.html"><img src="/images/product/product2.png" alt=""></a>
+                <a href="single-product.html"><img src="/uploads/products/product2.jpeg" alt=""></a>
             </div>
             <div class="cart_info">
                 <a href="single-product.html">Letraset Sheets</a>

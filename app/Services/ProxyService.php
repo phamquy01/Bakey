@@ -23,9 +23,16 @@ class ProxyService
         return $option;
     }
 
-    public function getProductNew($limit, $orderBy)
+    public function getProducts($limit = -1, $orderBy = 'desc', $isHot = false)
     {
-        return Product::where('status', 1)->orderBy('id', $orderBy)->limit($limit)->get();
+        $query = Product::query();
+        if ($limit > 0) {
+            $query->limit($limit);
+        }
+        if ($isHot) {
+            $query->where('hot', 1);
+        }
+        return $query->orderBy('created_at', $orderBy)->get();
     }
 
     public function getSlide()
@@ -33,11 +40,14 @@ class ProxyService
         return Slider::get();
     }
 
-    public function getCategory($nested = false)
+    public function getCategory($nested = false, $withProduct = false)
     {
         $query = CategoryProduct::query();
         if ($nested) {
             $query->with(['children'])->where('id_parent', 0);
+        }
+        if ($withProduct) {
+            $query->with(['products']);
         }
         return $query->get();
     }
@@ -47,7 +57,7 @@ class ProxyService
         return CategoryProduct::where('slug', $slug)->firstOrFail();
     }
 
-    public function getProducts($catId = null, $limit = -1, $orderBy = null, $keyWord = "")
+    public function getProductPaginate($catId = null, $limit = -1, $orderBy = null, $keyWord = "")
     {
         $query = Product::query();
         if (strlen($keyWord) > 0) {
@@ -72,4 +82,11 @@ class ProxyService
     {
         return Brand::get();
     }
+
+    public function getAllShoppingCart()
+    {
+        return session('cart');
+    }
+
+
 }

@@ -6,24 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="{{ $favicon }}">
-    <link rel="canonical" href="@yield('canonical')">
-    <meta name="description" content="@yield('description')">
-    <meta name="keywords" content="@yield('keywords')">
-    <meta property="og:title" content="@yield('title')">
-    <meta property="og:description" content="@yield('description')">
-
-    <meta name="twitter:title" content="@yield('title')">
-    <meta name="twitter:description" content="@yield('description')">
-    <meta name="twitter:image" content="@yield('image')">
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Website",
-          "name": "@yield('title')",
-          "url": "/",
-          "logo": "@yield('image')"
-        }
-        </script>
     <title>@yield('title')</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
     <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
@@ -39,6 +21,7 @@
     <link rel="stylesheet" href="{{ mix('/css/header.css') }}" />
     <link rel="stylesheet" href="{{ mix('/css/footer.css') }}" />
     <link rel="stylesheet" href="{{ mix('/css/common.css') }}" />
+    @livewireStyles
     {{-- <link rel="stylesheet" href="{{ mix('/css/' . View::getSection('file') . '.css') }}" /> --}}
     <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
 </head>
@@ -59,6 +42,7 @@
         @show
     </div>
 </body>
+@livewireScripts
 <script src="/js/vendor/jquery-3.6.0.min.js"></script>
 <script src="/js/vendor/jquery-migrate-3.3.2.min.js"></script>
 <script src="/js/vendor/bootstrap.bundle.min.js"></script>
