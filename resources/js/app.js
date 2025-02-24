@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("img").forEach((img) => {
         const src = img.getAttribute("src");
-        const noHasSrc = src == "";
+        const noHasSrc = src == "" || src == null;
 
         if (noHasSrc) {
             img.src = "/images/image_blank.webp";
@@ -306,9 +306,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     $("#amount").val(
         "$" +
-            $("#slider-range").slider("values", 0) +
-            " - $" +
-            $("#slider-range").slider("values", 1)
+        $("#slider-range").slider("values", 0) +
+        " - $" +
+        $("#slider-range").slider("values", 1)
     );
 
     /*---MailChimp---*/
@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     /*----------------------------------------*/
     /* Toggle Function Active
-	/*----------------------------------------*/
+    /*----------------------------------------*/
     // showlogin toggle
     $("#showlogin").on("click", function () {
         $("#checkout-login").slideToggle(900);

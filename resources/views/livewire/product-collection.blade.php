@@ -1,4 +1,3 @@
-  <!-- product section start -->
   <div class="product_section mb-80 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
       <div class="container">
           <div class="product_header">
@@ -51,4 +50,3 @@
           </div>
       </div>
   </div>
-  <!-- product section end -->

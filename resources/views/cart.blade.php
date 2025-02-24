@@ -47,8 +47,8 @@
                                                     </a>
                                                 </td>
                                                 <td class="product-thumbnail">
-                                                    <a href="#" ratio="1x1" class="bakery-ratio">
-                                                        <img src="/images/product/mini-product/product1.png"
+                                                    <a href="#" ratio="1x1" class="bakery-ratio d-block">
+                                                        <img class="w-100 h-100 object-fit-cover"src="/images/product/mini-product/product1.png"
                                                             alt="Cart Thumbnail"> </a>
                                                 </td>
                                                 <td class="product-name"><a href="#">{{ $cartProduct->name }}</a>

@@ -10,7 +10,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("img").forEach(function (img) {
     var src = img.getAttribute("src");
-    var noHasSrc = src == "";
+    var noHasSrc = src == "" || src == null;
     if (noHasSrc) {
       img.src = "/images/image_blank.webp";
       img.error = false;

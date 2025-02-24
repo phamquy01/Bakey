@@ -17,7 +17,7 @@ return new class extends Migration
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->string('name')->nullable(false);
-            $table->string('address')->nullable(false);;
+            $table->string('address')->nullable(false);
             $table->string('phone')->nullable(false);
             $table->string('email')->nullable();
             $table->integer('order_number')->nullable(false);
