@@ -1,4 +1,4 @@
-<div>
+<div class="sticky-top bg-white shadow-sm">
     <div class="page_search_box">
         <div class="search_close">
             <i class="ion-close-round"></i>
@@ -8,7 +8,7 @@
             <button type="submit"><span class="pe-7s-search"></span></button>
         </form>
     </div>
-    
+
     <div class="offcanvas_menu">
         <div class="container">
             <div class="row">
@@ -39,7 +39,7 @@
         </div>
     </div>
     <!--offcanvas menu area end-->
-    
+
     <!--header area start-->
     <header class="header_section">
         <div class="header_top">
@@ -101,7 +101,8 @@
                                 <li class="header_search"><a href="javascript:void(0)"><i class="pe-7s-search"></i></a>
                                 </li>
                                 <li class="header_wishlist"><a href="wishlist.html"><i class="pe-7s-like"></i></a></li>
-                                <li class="shopping_cart"><a href="javascript:void(0)"><i class="pe-7s-shopbag"></i></a>
+                                <li class="shopping_cart" wire:click="$toggle('miniCartIsOpen')">
+                                    <a href="javascript:void(0)"><i class="pe-7s-shopbag"></i></a>
                                     @if ($hasProductInCart)
                                         <span class="item_count">{{ $itemCount }}</span>
                                     @endif
@@ -117,62 +118,71 @@
         </div>
     </header>
     <!--header area end-->
-    
+
     <!--mini cart-->
-    <div class="mini_cart">
+    <div class="mini_cart {{ $miniCartIsOpen ? 'active' : '' }}">
         <div class="cart_gallery">
             <div class="cart_close">
                 <div class="cart_text">
-                    <h3>cart</h3>
+                    <h3>Giỏ hàng</h3>
                 </div>
                 <div class="mini_cart_close">
                     <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
                 </div>
             </div>
-            <div class="cart_item">
-                <div class="cart_img">
-                    <a href="single-product.html"><img src="/uploads/products/product1.jpeg" alt=""></a>
+            @foreach ($order->items as $item)
+                <div class="cart_item">
+                    <div class="cart_img">
+                        <a href="{{ $item?->product?->url() }}" class="ratio ratio-1x1"><img class="w-100 h-100 object-fit-cover" src="{{ $item?->product?->image }}" alt="{{ $item?->product?->name }}"></a>
+                    </div>
+                    <div class="cart_info">
+                        <a href="{{ $item?->product?->url() }}">{{ $item?->product?->name }}</a>
+                        <p>{{ $item->quantity }} x <span> {{ number_format($item->price, 0, ',', '.') }}₫ </span></p>
+                    </div>
+                    <div class="cart_remove">
+                        <a href="#" wire:click="removeItem({{ $item->id }})"><i class="ion-android-close"></i></a>
+                    </div>
                 </div>
-                <div class="cart_info">
-                    <a href="single-product.html">Primis In Faucibus</a>
-                    <p>1 x <span> $65.00 </span></p>
-                </div>
-                <div class="cart_remove">
-                    <a href="#"><i class="ion-android-close"></i></a>
-                </div>
-            </div>
-            <div class="cart_item">
-                <div class="cart_img">
-                    <a href="single-product.html"><img src="/uploads/products/product2.jpeg" alt=""></a>
-                </div>
-                <div class="cart_info">
-                    <a href="single-product.html">Letraset Sheets</a>
-                    <p>1 x <span> $60.00 </span></p>
-                </div>
-                <div class="cart_remove">
-                    <a href="#"><i class="ion-android-close"></i></a>
-                </div>
-            </div>
+            @endforeach
         </div>
         <div class="mini_cart_table">
             <div class="cart_table_border">
                 <div class="cart_total">
-                    <span>Sub total:</span>
-                    <span class="price">$125.00</span>
+                    <span>Tạm tính:</span>
+                    <span class="price">{{ number_format($order->total_amount, 0, ',', '.') }}₫</span>
                 </div>
                 <div class="cart_total mt-10">
-                    <span>total:</span>
-                    <span class="price">$125.00</span>
+                    <span>Thành tiền:</span>
+                    <span class="price">{{ number_format($order->total_price, 0, ',', '.') }}₫</span>
                 </div>
             </div>
         </div>
         <div class="mini_cart_footer">
             <div class="cart_button">
-                <a href="cart">View cart</a>
+                <a href="/gio-hang">Xem giỏ hàng</a>
             </div>
             <div class="cart_button">
-                <a href="checkout.html"><i class="fa fa-sign-in"></i> Checkout</a>
+                <a href="/dat-hang"><i class="fa fa-sign-in"></i> Đặt hàng</a>
             </div>
         </div>
     </div>
+    <div class="toast-container position-fixed top-25 end-0 p-3">
+        <div wire:ignore id="add-to-cart-toast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Đã thêm sản phẩm vào giỏ hàng!
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('livewire:initialized', () => {
+            Livewire.on('addToCartSuccess', () => {
+                var toastE = new bootstrap.Toast(document.getElementById('add-to-cart-toast'));
+                toastE.show();
+            });
+        })
+    </script>
 </div>

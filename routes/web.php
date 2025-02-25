@@ -15,15 +15,14 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductCategoryController;
-use App\Http\Controllers\ProductCollectionController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailController;
 use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,9 +37,10 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Auth::routes();
 Route::get('/', HomeController::class);
-Route::get('/cart', CartController::class);
+Route::get('/gio-hang', CartController::class);
+Route::get('/dat-hang', CheckoutController::class);
 Route::get('/about', AboutController::class);
-Route::get('/products', ProductController::class);
+Route::get('/san-pham', ProductController::class);
 Route::get('/blog', BlogController::class);
 Route::get('/contact', ContactController::class);
 Route::get('/account', AccountController::class);
