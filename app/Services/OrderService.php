@@ -171,8 +171,11 @@ class OrderService
 
     public function complete(Order $order): bool
     {
-        $order->order_status_id = $this->orderStatus['Pending'];
-        $order->payment_status_id = $this->paymentStatus['Pending'];
+        $order->status = $this->orderStatus['Pending'];
+        $order->payment_method = $this->paymentStatus['Pending'];
+        Cookie::queue(Cookie::forget($this->orderCookieKey['OrderId']));
+        Cookie::queue(Cookie::forget($this->orderCookieKey['OrderItemCount']));
+        app('mail')->sendOrderMail($order);
         return $order->save();
     }
 }

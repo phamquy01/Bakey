@@ -11,7 +11,7 @@ use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\AdminSliderController;
 use App\Http\Controllers\Admin\AdminFeedbackController;
 use App\Http\Controllers\Admin\SettingController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CartController;
@@ -44,7 +44,9 @@ Route::get('/san-pham', ProductController::class);
 Route::get('/blog', BlogController::class);
 Route::get('/contact', ContactController::class);
 Route::get('/account', AccountController::class);
-Route::get('/login', LoginController::class);
+Route::get('/dat-hang-thanh-cong', function() {
+    return view('checkout-success');
+});
 
 
 Route::get('/category/{slug?}', ProductCategoryController::class)->name('category-detail');

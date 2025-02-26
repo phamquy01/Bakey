@@ -2,7 +2,7 @@
 
 namespace App\Repositories\User;
 
-interface UserRepositoryInterface 
+interface UserRepositoryInterface
 {
     public function getAllUser($search);
     public function getUserActive($search);
@@ -12,4 +12,6 @@ interface UserRepositoryInterface
     public function delete($search);
     public function count();
     public function total();
+    public function login($request);
+    public function register($request);
 }

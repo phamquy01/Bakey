@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Services\ImageService;
+use App\Services\MailService;
 use App\Services\ProxyService;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
@@ -24,6 +25,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind("App\Services\Brand\BrandServiceInterface", "App\Services\Brand\BrandService");
         $this->app->bind("App\Services\Slider\SliderServiceInterface", "App\Services\Slider\SliderService");
         $this->app->bind("proxy", ProxyService::class);
+        $this->app->bind("mail", MailService::class);
         $this->app->bind("file.image", ImageService::class);
         $this->app->bind("order", OrderService::class);
     }
