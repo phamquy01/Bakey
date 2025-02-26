@@ -11,7 +11,6 @@ class HomeController extends Controller
         $categories = app("proxy")->getCategory(withProduct: true);
         $newProducts = app("proxy")->getProducts(8);
         $hotProducts = app("proxy")->getProducts(isHot: true);
-        // $shoppingCart = app("proxy")->getAllTableShoppingCart();
         return view('home-page', compact('categories', 'newProducts', 'hotProducts'));
     }
 }

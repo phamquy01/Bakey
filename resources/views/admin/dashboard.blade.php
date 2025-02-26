@@ -47,9 +47,11 @@
         <!-- end analytic  -->
         <div class="card">
             <div class="card-header font-weight-bold">
-                Sản phẩm mới
+                Thống kê
             </div>
             <div class="card-body">
+                <div>
+                </div>
 
             </div>
         </div>

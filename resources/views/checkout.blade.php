@@ -8,10 +8,10 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="breadcrumbs_text">
-                            <h1>Đặt hàng</h1>
+                            <h1>Checkout</h1>
                             <ul>
-                                <li><a href="/">Trang chủ</a></li>
-                                <li> // Đặt hàng</li>
+                                <li><a href="index.html">Home</a></li>
+                                <li> // Checkout</li>
                             </ul>
                         </div>
                     </div>

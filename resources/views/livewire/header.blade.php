@@ -87,7 +87,7 @@
                                     <li><a href="/about">About</a></li>
                                     {{-- <li><a href="/page">Pages</a></li> --}}
                                     <li class="megamenu-holder">
-                                        <a href="/products">Shop</a>
+                                        <a href="/san-pham">Shop</a>
                                     </li>
                                     <li><a href="/blog">blog</a>
                                     </li>
@@ -133,14 +133,17 @@
             @foreach ($order->items as $item)
                 <div class="cart_item">
                     <div class="cart_img">
-                        <a href="{{ $item?->product?->url() }}" class="ratio ratio-1x1"><img class="w-100 h-100 object-fit-cover" src="{{ $item?->product?->image }}" alt="{{ $item?->product?->name }}"></a>
+                        <a href="{{ $item?->product?->url() }}" class="ratio ratio-1x1"><img
+                                class="w-100 h-100 object-fit-cover" src="{{ $item?->product?->image }}"
+                                alt="{{ $item?->product?->name }}"></a>
                     </div>
                     <div class="cart_info">
                         <a href="{{ $item?->product?->url() }}">{{ $item?->product?->name }}</a>
                         <p>{{ $item->quantity }} x <span> {{ number_format($item->price, 0, ',', '.') }}₫ </span></p>
                     </div>
                     <div class="cart_remove">
-                        <a href="#" wire:click="removeItem({{ $item->id }})"><i class="ion-android-close"></i></a>
+                        <a href="#" wire:click="removeItem({{ $item->id }})"><i
+                                class="ion-android-close"></i></a>
                     </div>
                 </div>
             @endforeach
@@ -167,7 +170,8 @@
         </div>
     </div>
     <div class="toast-container position-fixed top-25 end-0 p-3">
-        <div wire:ignore id="add-to-cart-toast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div wire:ignore id="add-to-cart-toast" class="toast align-items-center text-bg-primary border-0"
+            role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
                 <div class="toast-body">
                     Đã thêm sản phẩm vào giỏ hàng!

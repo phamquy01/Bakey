@@ -48,21 +48,25 @@
                   {"breakpoint":500, "settings": { "slidesToShow": 1 } }  
                  ]                                                     
             }'>
-                    @foreach ($categories as $category)
-                        <div class="col-lg-4">
-                            <div class="single_featured_banner wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
-                                <div class="featured_banner_thumb">
-                                    <a href="/"><img src={{ $category->image }} alt=""></a>
-                                </div>
-                                <div class="featured_banner_text d-flex justify-content-between align-items-center">
-                                    <h3><a href="/">{{ $category->name }}</a></h3>
-                                    <span>({{ count($category->products) }})</span>
+                    @if ($categories->isNotEmpty())
+                        @foreach ($categories as $category)
+                            <div class="col-lg-4">
+                                <div class="single_featured_banner wow fadeInUp" data-wow-delay="0.1s"
+                                    data-wow-duration="1.1s">
+                                    <div class="featured_banner_thumb">
+                                        <a href="/"><img src="{{ $category->image ?? 'default.jpg' }}"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="featured_banner_text d-flex justify-content-between align-items-center">
+                                        <h3><a href="/">{{ $category->name }}</a></h3>
+                                        <span>({{ $category->products->count() ?? 0 }})</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
-
-
+                        @endforeach
+                    @else
+                        <p>Không có danh mục nào!</p>
+                    @endif
                 </div>
             </div>
         </div>
@@ -72,7 +76,7 @@
 
         <!-- banner section  start -->
         <div class="banner_section banner_section2 mb-140 padding-l-r-92">
-            <div class="container-fluid">
+            <div class="container-fluid"> 
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single_banner wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
