@@ -50,16 +50,16 @@
                 Thống kê
             </div>
             <div class="card-body p-4">
-                <div class="mb-4">
+                {{-- <div class="mb-4">
                     <h5 class="font-weight-bold">Biểu đồ doanh thu</h5>
-                </div>
+                </div> --}}
                 <div style="width:100%; margin-bottom: 40px;">
                     <canvas id="myChart" wire:ignore style="width: 100%; height:400px"></canvas>
                 </div>
 
-                <div class="mb-4 mt-5">
+                {{-- <div class="mb-4 mt-5">
                     <h5 class="font-weight-bold">Biểu đồ thống kê số lượng đơn hàng hoàn thành</h5>
-                </div>
+                </div> --}}
                 <div style="width:40%; margin-bottom: 20px;">
                     <canvas id="myChart2" wire:ignore style="width: 100%; height:400px"></canvas>
                 </div>
@@ -72,9 +72,19 @@
 
 @section('js')
     @php
-        $data = [600000, 450000, 300000, 200000, 100000, 50000, 0];
-        $labels = ['Tháng 12', 'Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6'];
-        $data2 = [100, 200, 300, 400, 500, 600, 700];
+        $labels = [];
+        $data = [];
+        foreach ($revenueData as $item) {
+            $labels[] = \Carbon\Carbon::parse($item->month)->format('m/y');
+            $data[] = $item->total_revenue;
+        }
+
+        $labels2 = [];
+        $data2 = [];
+        foreach ($caculateMonthlyOrder as $item) {
+            $labels2[] = \Carbon\Carbon::parse($item->month)->format('m/y');
+            $data2[] = $item->total_order;
+        }
     @endphp
     <script>
         const ctx = document.getElementById('myChart');
@@ -84,7 +94,7 @@
             data: {
                 labels: @json($labels),
                 datasets: [{
-                    label: '# of Votes',
+                    label: 'Doanh thu',
                     data: @json($data),
                     borderWidth: 1
                 }]
@@ -103,9 +113,9 @@
         new Chart(ctx2, {
             type: 'doughnut',
             data: {
-                labels: @json($labels),
+                labels: @json($labels2),
                 datasets: [{
-                    label: '# of Votes',
+                    label: 'Số lượng đơn hàng',
                     data: @json($data2),
                     borderWidth: 1
                 }]
